@@ -1,0 +1,106 @@
+/* bg #0086FF;
+ border #3498db;
+color #ecf0f1
+ btn op #9ACDFF; 
+  box- shadow for button -webkit-box-shadow: -1px 8px 8px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 8px 8px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+
+
+ boxshadow for container   -webkit-box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+-moz-box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+
+ 
+ */
+
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 300px;
+    height: auto;
+    border: 1px solid #0086FF;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+-moz-box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+box-shadow: -1px 8px 8px 1px rgba(123, 144, 169, 1);
+
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 280px;
+    padding: 15px 10px;
+    color: #ecf0f1;
+    font-weight: 800;
+    text-align: right;
+    border: none;
+    background: #0086FF;
+    font-size: 40px;
+    margin-bottom: 15px;
+    
+   
+
+}
+
+input[type="text"]::placeholder{
+    color: #ecf0f1;
+    font-weight: 800;
+}
+
+.cal-keys .cal-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-keys .cal-row button{
+   width: 50px;
+   height: 50px;
+   margin: 5px;
+   font-size: 25px;
+   font-weight: 400;
+   border: none;
+   border: 1px solid  #3498db;
+   border-radius: 5px;
+   background: #ecf0f1;
+   cursor: pointer;
+   -webkit-box-shadow: -1px 8px 8px 1px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: -1px 8px 8px 1px rgba(0, 0, 0, 0.75);
+   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+   
+}
+
+.cal-keys .cal-row button:focus{
+   outline: none;
+}
+
+.cal-keys .cal-row button:active{
+   transform: translate(.1rem);
+   border: none;
+}
+
+
+.cal-keys .cal-row .btn-equal{
+   width: 77%;
+   background: #0086FF;
+   color: #ecf0f1;
+   margin-bottom: 20px;
+}
+
+.cal-keys .cal-row .btn-blue{
+   background: #9ACDFF;
+   color: #ecf0f1;
+}

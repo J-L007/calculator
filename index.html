@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
+    <script src="./script.js "></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <input type="text" id="tbox1" class="cal-display" placeholder="0" readonly="readonly">
+            <div class="cal-keys">
+                <div class="cal-row">
+                    <button class="num" value="7" onclick="displayNum('7')" > 7</button>
+                    <button class="num" value="8" onclick="displayNum('8')"> 8</button>
+                    <button class="num" value="9" onclick="displayNum('9')"> 9</button>
+                    <button class="op btn-blue" value="+" onclick="displayNum('+')"> +</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" value="4" onclick="displayNum('4')"> 4</button>
+                    <button class="num" value="5" onclick="displayNum('5')"> 5</button>
+                    <button class="num" value="6" onclick="displayNum('6')"> 6</button>
+                    <button class="op btn-blue" value="-" onclick="displayNum('-')"> -</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" value="1" onclick="displayNum('1')"> 1</button>
+                    <button class="num" value="2" onclick="displayNum('2')"> 2</button>
+                    <button class="num" value="3" onclick="displayNum('3')"> 3</button>
+                    <button class="btn-blue op " value="*" onclick="displayNum('*')"> *</button>
+                </div>
+                <div class="cal-row">
+                    <button class="num" value="0" onclick="displayNum('0')"> 0</button>
+                    <button class="num" value="." onclick="displayNum('.')"> .</button>
+                    <button class="op btn-blue" value="/" onclick="displayNum('/')"> /</button>
+                    <button class="btn-blue " id="clear" value=" " onclick="clearBox()"> C</button>
+                </div>
+                <div class="cal-row">
+                    <button class="btn-equal" value="=" onclick="evaluateexp()"> = </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
